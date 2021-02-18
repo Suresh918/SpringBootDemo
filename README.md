@@ -9,7 +9,7 @@ https://github.com/GoogleContainerTools/jib
 
 The following is the command to build and push docker image,
 
-mvn clean install jib:build -Djib.from.image=docker.io/scottyengineering/java11:latest -Djib.from.auth.username=${docker hub user name} -Djib.from.auth.password=${docker hub password} -Djib.to.image=docker.io/suresh918/springboot-demo:latest -Djib.to.auth.username=${docker hub user name} -Djib.to.auth.password=${docker hub password} 
+mvn clean install jib:build -Djib.to.image=docker.io/suresh918/springboot-demo:latest -Djib.to.auth.username=${docker hub user name} -Djib.to.auth.password=${docker hub password} 
 
 
 the following is the command used in mychange project gitlab pipeline,
