@@ -13,6 +13,8 @@ mvn clean install jib:build -Djib.from.image=docker.io/scottyengineering/java11:
 
 
 the following is the command used in mychange project gitlab pipeline,
+
+
  mvn --settings $MAVEN_SETTINGS --no-transfer-progress clean compile jib:build -Djib.from.image=$ARTIFACTORY_REGISTRY_DOCKER/distroless/java:11 -Djib.from.auth.username=$ARTIFACTORY_USERNAME -Djib.from.auth.password=$ARTIFACTORY_TOKEN -Djib.to.image=$ARTIFACTORY_REGISTRY_DOCKER/$CI_PROJECT_NAME:$CI_COMMIT_REF_NAME -Djib.to.auth.username=$ARTIFACTORY_USERNAME -Djib.to.auth.password=$ARTIFACTORY_TOKEN -Djib.httpTimeout=120000
 
 
