@@ -1,1 +1,3 @@
 # SpringBootDemo
+
+springboot + mysql sample
