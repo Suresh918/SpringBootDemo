@@ -21,5 +21,6 @@ steps:
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     codeCoverageToolOption: 'JaCoCo'
     goals: 'package'
+- task: SonarQubeAnalyze@5
 
     
