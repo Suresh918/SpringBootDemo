@@ -21,9 +21,9 @@ steps:
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     codeCoverageToolOption: 'JaCoCo'
     goals: 'package'
-- task: SonarQubePublish@5
-  inputs:
-    pollingTimeoutSec: '300'
+#- task: SonarQubePublish@5
+#  inputs:
+#    pollingTimeoutSec: '300'
 
 
     
