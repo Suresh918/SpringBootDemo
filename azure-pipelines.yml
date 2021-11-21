@@ -23,4 +23,4 @@ steps:
 - task: PublishCodeCoverageResults@1
   inputs:
     codeCoverageTool: 'JaCoCo' # Available options: 'JaCoCo', 'Cobertura'
-    summaryFileLocation: 
+    summaryFileLocation: '$(System.DefaultWorkingDirectory)/SpringBootDemo/**/site/jacoco/jacoco.xml'
